@@ -12,8 +12,8 @@ public class Main {
         while (iterator.hasNext()) {
             var integer = iterator.next();
             if (integer % 2 != 0) {
-                numbers.remove(integer);
-                System.out.print(integer + " ");
+                iterator.remove();
+                System.out.println(integer + " ");
             }
         }
     }
